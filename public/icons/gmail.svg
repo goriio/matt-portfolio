@@ -1,0 +1,17 @@
+<svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icons8-gmail 1" clip-path="url(#clip0_107_662)">
+<g id="mail">
+<mask id="mask0_107_662" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="48" height="48">
+<rect id="Bounding box" x="1" width="48" height="48" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_107_662)">
+<path id="mail_2" d="M9.61546 38.9999C8.60519 38.9999 7.75006 38.6499 7.05006 37.9499C6.35006 37.2499 6.00006 36.3948 6.00006 35.3845V12.6154C6.00006 11.6051 6.35006 10.75 7.05006 10.05C7.75006 9.35 8.60519 9 9.61546 9H40.3846C41.3948 9 42.25 9.35 42.95 10.05C43.65 10.75 44 11.6051 44 12.6154V35.3845C44 36.3948 43.65 37.2499 42.95 37.9499C42.25 38.6499 41.3948 38.9999 40.3846 38.9999H9.61546ZM25 25.1153L41 14.8845L40.6923 12L25 22L9.30771 12L9.00001 14.8845L25 25.1153Z" fill="#755664"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_107_662">
+<rect width="48" height="48" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+</svg>
