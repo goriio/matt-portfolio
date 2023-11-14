@@ -41,8 +41,7 @@ export const projects: Project[] = [
   {
     id: 2,
     title: "aso-bee: Kids’ E-Commerce Applicaiton",
-    description:
-      "Juan Dela Cook is a Cookbook Application that finds the recipe for your dishes and meals!",
+    description: `aso-bee comes from the word "asobi/遊び" meaning 'play' combined with our fuzzy fellow bee!`,
     cover: "/images/aso-bee-cover.png",
     boxShadow:
       "0px 4px 8px 0px rgba(0, 0, 0, 0.10), 0px 15px 15px 0px rgba(0, 0, 0, 0.09), 0px 34px 20px 0px rgba(0, 0, 0, 0.05), 0px 60px 24px 0px rgba(0, 0, 0, 0.01), 0px 94px 26px 0px rgba(0, 0, 0, 0.00)",
@@ -58,8 +57,12 @@ export const projects: Project[] = [
     prototypeLink: "/",
     features: [
       {
+        icon: "/icons/stylus-note.svg",
+        description: "Designed for kids for friendly look!",
+      },
+      {
         icon: "/icons/search.svg",
-        description: "Intuitive searching with keywords and filters",
+        description: "Easier search with categories section on home!",
       },
       {
         icon: "/icons/account-circle.svg",
@@ -67,11 +70,11 @@ export const projects: Project[] = [
       },
       {
         icon: "/icons/sell.svg",
-        description: "Check for estimated price of your searched recipe!",
+        description: "Fast add to cart and checkout!",
       },
       {
         icon: "/icons/star.svg",
-        description: "Like, favorite, comment and more!",
+        description: "Rate, favorite, comment and more!",
       },
     ],
   },
@@ -79,7 +82,7 @@ export const projects: Project[] = [
     id: 3,
     title: "FastSend Mobile Solutions: Internship Accomplishments",
     description:
-      "Juan Dela Cook is a Cookbook Application that finds the recipe for your dishes and meals!",
+      "I had 5 months internship experience with FastSend. Here are the accomplishment and my roles as a UI/UX Designer:",
     cover: "/images/fastsend-cover.jpg",
     boxShadow:
       "0px 4px 8px 0px rgba(41, 80, 157, 0.20), 0px 15px 15px 0px rgba(41, 80, 157, 0.17), 0px 34px 20px 0px rgba(41, 80, 157, 0.10), 0px 60px 24px 0px rgba(41, 80, 157, 0.03), 0px 94px 26px 0px rgba(41, 80, 157, 0.00)",
@@ -95,20 +98,24 @@ export const projects: Project[] = [
     prototypeLink: "/",
     features: [
       {
+        icon: "/icons/stylus-note.svg",
+        description: "Made infographics for marketing purposes",
+      },
+      {
         icon: "/icons/search.svg",
-        description: "Intuitive searching with keywords and filters",
+        description: "Proposed revisions for improvement of UI",
       },
       {
-        icon: "/icons/account-circle.svg",
-        description: "Create an account for to save your favorites!",
+        icon: "/icons/point-scan.svg",
+        description: "Made different graphics design skit",
       },
       {
-        icon: "/icons/sell.svg",
-        description: "Check for estimated price of your searched recipe!",
+        icon: "/icons/mark-as-unread.svg",
+        description: "E-mail content for introduction of the application",
       },
       {
-        icon: "/icons/star.svg",
-        description: "Like, favorite, comment and more!",
+        icon: "/icons/more-horiz.svg",
+        description: "and more!",
       },
     ],
   },
