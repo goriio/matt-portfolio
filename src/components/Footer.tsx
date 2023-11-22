@@ -6,9 +6,9 @@ import { animateScroll } from "react-scroll";
 
 export function Footer() {
   return (
-    <footer className="relative md:py-6 md:pt-[180px] md:pb-16">
+    <footer className="relative py-6">
       <Container>
-        <div className="flex flex-col text-gray-9 text-sm font-light md:text-base">
+        <div className="flex flex-col text-gray-9 text-sm font-light">
           <span>Copyright © Matt Harvey Ostulano</span>
           <span>
             Icons courtesy of icons8. Illustrations courtesy of unDraw.
@@ -18,9 +18,9 @@ export function Footer() {
           <Image
             src="/icons/arrow-up.svg"
             alt="Arrow up icon"
-            width={72}
-            height={72}
-            className="absolute bottom-8 right-6 md:bottom-[120px] md:right-[108px]"
+            width={52}
+            height={52}
+            className="absolute bottom-8 right-6 md:bottom-20 md:right-32"
           />
         </button>
       </Container>
