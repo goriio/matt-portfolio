@@ -17,8 +17,10 @@ export const projects: Project[] = [
       "/images/jdc-slide-5.png",
       "/images/jdc-slide-6.png",
     ],
-    dribbbleLink: "/",
-    prototypeLink: "/",
+    dribbbleLink:
+      "https://dribbble.com/shots/22835453-Cookbook-Recipe-Application-Concept",
+    prototypeLink:
+      "https://www.figma.com/proto/IhHOCwUjjpPVlPVHoE1NhX/Portfolio?page-id=0%3A1&type=design&node-id=25-868&viewport=-298%2C239%2C0.27&t=LjRxw5Vki8KauF4e-1&scaling=min-zoom&starting-point-node-id=25%3A1504&show-proto-sidebar=1&mode=design",
     features: [
       {
         icon: "/icons/search.svg",
@@ -53,8 +55,10 @@ export const projects: Project[] = [
       "/images/jdc-slide-5.png",
       "/images/jdc-slide-6.png",
     ],
-    dribbbleLink: "/",
-    prototypeLink: "/",
+    dribbbleLink:
+      "https://dribbble.com/shots/22863998-Kids-E-Commerce-Concept-App",
+    prototypeLink:
+      "https://www.figma.com/proto/IhHOCwUjjpPVlPVHoE1NhX/Portfolio?page-id=275%3A6341&type=design&node-id=275-8347&viewport=1411%2C1082%2C0.16&t=J1XzbkhE0ixNI7HE-1&scaling=min-zoom&starting-point-node-id=275%3A8347&show-proto-sidebar=1&mode=design",
     features: [
       {
         icon: "/icons/stylus-note.svg",
@@ -94,8 +98,8 @@ export const projects: Project[] = [
       "/images/jdc-slide-5.png",
       "/images/jdc-slide-6.png",
     ],
-    dribbbleLink: "/",
-    prototypeLink: "/",
+    prototypeLink:
+      "https://www.figma.com/file/IhHOCwUjjpPVlPVHoE1NhX/Portfolio?type=design&node-id=185%3A1752&mode=design&t=BXI4PPUChWmX7jUZ-1",
     features: [
       {
         icon: "/icons/stylus-note.svg",

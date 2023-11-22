@@ -58,19 +58,36 @@ export function About() {
             <div className="flex items-center justify-center gap-[18px]">
               {[
                 {
+                  title: "Dribbble",
                   icon: "/icons/dribble.svg",
+                  link: "https://dribbble.com/rabirai",
                 },
                 {
+                  title: "LinkedIn",
                   icon: "/icons/linkedin.svg",
+                  link: "https://www.linkedin.com/in/matt-harvey-ostulano-25b3b8296/",
                 },
                 {
+                  title: "Email",
                   icon: "/icons/gmail.svg",
+                  link: "mailto:mattharvey220@gmail.com",
                 },
-              ].map(({ icon }) => {
+              ].map(({ title, icon, link }) => {
                 return (
-                  <div key={icon} className="px-6 py-3 bg-gray-1 shadow-tag rounded-2xl md:rounded-2xl">
-                    <Image src={icon} alt={icon} width={32} height={32} />
-                  </div>
+                  <a
+                    key={title}
+                    href={link}
+                    target="_blank"
+                    title={title}
+                    className="inline-block px-6 py-3 bg-gray-1 shadow-tag rounded-2xl md:rounded-2xl"
+                  >
+                    <Image
+                      src={icon}
+                      alt={`${title} icon`}
+                      width={32}
+                      height={32}
+                    />
+                  </a>
                 );
               })}
             </div>

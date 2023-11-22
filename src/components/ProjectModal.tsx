@@ -54,6 +54,7 @@ export function ProjectModal({
             {project.dribbbleLink && (
               <a
                 href={project.dribbbleLink}
+                target="_blank"
                 className="inline-flex flex-1 items-center justify-center gap-1 px-4 py-2 rounded-xl bg-primary text-lg text-gray-1 md:px-5 md:py-3 md:text-xl md:flex-initial"
               >
                 Dribbble
@@ -68,6 +69,7 @@ export function ProjectModal({
             {project.prototypeLink && (
               <a
                 href={project.prototypeLink}
+                target="_blank"
                 className="inline-flex flex-1 items-center justify-center gap-1  px-4 py-2 rounded-xl ring-2 ring-inset ring-primary text-lg text-primary md:px-5 md:py-3 md:text-xl md:flex-initial"
               >
                 Prototype

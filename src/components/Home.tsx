@@ -17,9 +17,9 @@ export function Home() {
               </p>
             </div>
             <div className="space-x-5">
-              <button className="px-5 py-2 rounded-2xl bg-primary text-gray-1 text-lg shadow-button">
+              <a href="mailto:mattharvey220@gmail.com" target="_blank" className="inline-block px-5 py-2 rounded-2xl bg-primary text-gray-1 text-lg shadow-button">
                 Get in touch
-              </button>
+              </a>
               <button className="px-5 py-2 rounded-2xl ring-[2px] ring-primary ring-inset text-primary text-lg">
                 Resume
               </button>
