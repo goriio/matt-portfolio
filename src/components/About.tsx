@@ -3,12 +3,12 @@ import { Container } from "./Container";
 
 export function About() {
   return (
-    <section id="about" className="pt-24 pb-6 md:pt-[115px] md:pb-[282px]">
+    <section id="about" className="py-24">
       <Container>
         <div className="flex flex-col-reverse justify-between gap-12 md:flex-row">
           <div>
-            <article className="max-w-[675px] text-gray-5 text-lg text-start font-normal md:text-xl md:text-justify">
-              <h2 className="mb-4 font-semibold text-3xl text-gray-9 md:text-5xl">
+            <article className="max-w-[675px] text-gray-5 text-base text-start font-normal md:text-justify">
+              <h2 className="mb-4 font-semibold text-3xl text-gray-9 md:text-4xl">
                 About Me
               </h2>
               <div className="space-y-4">
@@ -50,36 +50,29 @@ export function About() {
             <Image
               src="/images/matt-picture.jpg"
               alt="Matt's Picture"
-              className="rounded-2xl mb-6"
+              className="rounded-2xl mb-4"
               width={447}
               height={570}
             />
 
             <div className="flex items-center justify-center gap-[18px]">
-              <div className="px-4 py-2 bg-gray-1 shadow-tag rounded-2xl md:px-6 md:py-[10px] md:rounded-2xl">
-                <Image
-                  src="/icons/dribble.svg"
-                  alt="Dribble icon"
-                  width={48}
-                  height={48}
-                />
-              </div>
-              <div className="px-4 py-2 bg-gray-1 shadow-tag rounded-2xl md:px-6 md:py-[10px] md:rounded-2xl">
-                <Image
-                  src="/icons/linkedin.svg"
-                  alt="LinkedIn icon"
-                  width={48}
-                  height={48}
-                />
-              </div>
-              <div className="px-4 py-2 bg-gray-1 shadow-tag rounded-2xl md:px-6 md:py-[10px] md:rounded-2xl">
-                <Image
-                  src="/icons/gmail.svg"
-                  alt="Gmail icon"
-                  width={48}
-                  height={48}
-                />
-              </div>
+              {[
+                {
+                  icon: "/icons/dribble.svg",
+                },
+                {
+                  icon: "/icons/linkedin.svg",
+                },
+                {
+                  icon: "/icons/gmail.svg",
+                },
+              ].map(({ icon }) => {
+                return (
+                  <div key={icon} className="px-6 py-3 bg-gray-1 shadow-tag rounded-2xl md:rounded-2xl">
+                    <Image src={icon} alt={icon} width={32} height={32} />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

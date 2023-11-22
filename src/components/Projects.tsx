@@ -5,21 +5,21 @@ import { Container } from "./Container";
 import { projects } from "@/data";
 import Image from "next/image";
 import { ProjectModal } from "./ProjectModal";
-import { Project } from "@/types/project";
+import { type Project } from "@/types/project";
 
 export function Projects() {
   return (
-    <section id="projects" className="py-28 md:py-[127px]">
+    <section id="projects" className="py-24">
       <Container>
-        <div className="mb-8 space-y-4 text-left md:text-center md:mb-12 md:space-y-6">
-          <h2 className="font-semibold text-3xl text-gray-9 leading-[1.25] md:text-[64px]">
+        <div className="mb-8 space-y-4 text-left md:text-center md:mb-12">
+          <h2 className="font-semibold text-3xl text-gray-9 leading-[1.25] md:text-4xl">
             Projects
           </h2>
-          <p className="text-lg text-gray-9 leading-[1.25] md:text-2xl">
+          <p className="text-lg text-gray-9 leading-[1.25]">
             Here are the few projects that I did
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-x-16 gap-y-12 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-x-16 gap-y-8 md:grid-cols-2 md:px-16">
           {projects.map((project) => {
             return <Project key={project.id} project={project} />;
           })}
@@ -45,7 +45,7 @@ export function Project({ project }: { project: Project }) {
   return (
     <div>
       <button
-        className="group relative w-full h-60 rounded-2xl overflow-hidden md:h-[310px]"
+        className="group relative w-full h-56 rounded-2xl overflow-hidden"
         style={{ boxShadow: project.boxShadow }}
         onClick={openModal}
       >

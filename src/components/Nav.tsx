@@ -52,7 +52,7 @@ export function Nav() {
 
   return (
     <nav className="relative inline-flex items-center">
-      <ul className="flex items-center gap-8 text-lg md:text-[24px] md:gap-16">
+      <ul className="flex items-center gap-8 text-xl md:gap-16">
         {navList.map(({ link, label }) => {
           return (
             <li
@@ -68,7 +68,7 @@ export function Nav() {
         })}
       </ul>
       <div
-        className="absolute bottom-0 w-[69px] h-[10px] bg-[#897586] rounded-[6px] transition-all ease duration-700 hidden md:block"
+        className="absolute bottom-0 w-[57px] h-[10px] bg-[#897586] rounded-[6px] transition-all ease duration-700 hidden md:block"
         style={{
           translate: indicatorStyle[activeLink]?.left,
           width: indicatorStyle[activeLink]?.width,
