@@ -1,7 +1,37 @@
 "use client";
 
+import { motion, Variants } from "framer-motion";
 import { RefObject, createRef, useEffect, useState } from "react";
 import { Link } from "react-scroll";
+
+const listVariants: Variants = {
+  hidden: {
+    y: 0.1,
+  },
+  visible: {
+    y: 0,
+    transition: {
+      delay: 0.5,
+      staggerChildren: 0.25,
+      when: "beforeChildren",
+    },
+  },
+};
+
+const linkVariants: Variants = {
+  hidden: {
+    y: -20,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      ease: "easeOut",
+      duration: 0.5,
+    },
+  },
+};
 
 export function Nav() {
   const [activeLink, setActiveLink] = useState("home");
@@ -47,33 +77,40 @@ export function Nav() {
         }));
       }
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <nav className="relative inline-flex items-center">
+    <motion.nav
+      className="relative inline-flex items-center"
+      variants={listVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <ul className="flex items-center gap-8 text-xl md:gap-16">
         {navList.map(({ link, label }) => {
           return (
-            <li
+            <motion.li
               ref={linkRefs[link]}
               key={link}
               className="py-3 gray-9 cursor-pointer"
+              variants={linkVariants}
             >
               <Link to={link} spy smooth onClick={() => setActiveLink(link)}>
                 {label}
               </Link>
-            </li>
+            </motion.li>
           );
         })}
       </ul>
-      <div
-        className="absolute bottom-0 w-[57px] h-[10px] bg-[#897586] rounded-[6px] transition-all ease duration-700 hidden md:block"
+      <motion.div
+        className="absolute bottom-0 h-[10px] bg-[#897586] rounded-[6px] transition-all ease duration-700 hidden md:block"
         style={{
           translate: indicatorStyle[activeLink]?.left,
           width: indicatorStyle[activeLink]?.width,
         }}
+        variants={linkVariants}
       />
-    </nav>
+    </motion.nav>
   );
 }
