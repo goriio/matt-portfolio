@@ -35,6 +35,7 @@ const linkVariants: Variants = {
 
 export function Nav() {
   const [activeLink, setActiveLink] = useState("home");
+  const [isSpying, setIsSpying] = useState(true);
 
   const navList = [
     {
@@ -96,7 +97,19 @@ export function Nav() {
               className="py-3 gray-9 cursor-pointer"
               variants={linkVariants}
             >
-              <Link to={link} spy smooth onClick={() => setActiveLink(link)}>
+              <Link
+                to={link}
+                spy={isSpying}
+                smooth
+                onSetActive={() => setActiveLink(link)}
+                onClick={() => {
+                  setIsSpying(false);
+                  setActiveLink(link);
+                  setTimeout(() => {
+                    setIsSpying(true);
+                  }, 1000);
+                }}
+              >
                 {label}
               </Link>
             </motion.li>
