@@ -10,8 +10,8 @@ export const projects: Project[] = [
     boxShadow:
       "0px 8px 17px 0px rgba(230, 198, 173, 0.20), 0px 30px 30px 0px rgba(230, 198, 173, 0.17), 0px 68px 41px 0px rgba(230, 198, 173, 0.10), 0px 121px 48px 0px rgba(230, 198, 173, 0.03), 0px 189px 53px 0px rgba(230, 198, 173, 0.00)",
     slides: [
-      "/images/jdc-slide-1.png",
-      "/images/jdc-slide-2.png",
+      "/images/jdc-slide-1.gif",
+      "/images/jdc-slide-2.gif",
       "/images/jdc-slide-3.png",
       "/images/jdc-slide-4.png",
       "/images/jdc-slide-5.png",
@@ -48,12 +48,12 @@ export const projects: Project[] = [
     boxShadow:
       "0px 4px 8px 0px rgba(0, 0, 0, 0.10), 0px 15px 15px 0px rgba(0, 0, 0, 0.09), 0px 34px 20px 0px rgba(0, 0, 0, 0.05), 0px 60px 24px 0px rgba(0, 0, 0, 0.01), 0px 94px 26px 0px rgba(0, 0, 0, 0.00)",
     slides: [
-      "/images/jdc-slide-1.png",
-      "/images/jdc-slide-2.png",
-      "/images/jdc-slide-3.png",
-      "/images/jdc-slide-4.png",
-      "/images/jdc-slide-5.png",
-      "/images/jdc-slide-6.png",
+      "/images/aso-bee-slide-1.gif",
+      "/images/aso-bee-slide-2.png",
+      "/images/aso-bee-slide-3.png",
+      "/images/aso-bee-slide-4.png",
+      "/images/aso-bee-slide-5.png",
+      "/images/aso-bee-slide-6.gif",
     ],
     dribbbleLink:
       "https://dribbble.com/shots/22863998-Kids-E-Commerce-Concept-App",
@@ -91,12 +91,10 @@ export const projects: Project[] = [
     boxShadow:
       "0px 4px 8px 0px rgba(41, 80, 157, 0.20), 0px 15px 15px 0px rgba(41, 80, 157, 0.17), 0px 34px 20px 0px rgba(41, 80, 157, 0.10), 0px 60px 24px 0px rgba(41, 80, 157, 0.03), 0px 94px 26px 0px rgba(41, 80, 157, 0.00)",
     slides: [
-      "/images/jdc-slide-1.png",
-      "/images/jdc-slide-2.png",
-      "/images/jdc-slide-3.png",
-      "/images/jdc-slide-4.png",
-      "/images/jdc-slide-5.png",
-      "/images/jdc-slide-6.png",
+      "/images/fastsend-cover.jpg",
+      "/images/fastsend-slide-2.gif",
+      "/images/fastsend-slide-3.png",
+      "/images/fastsend-slide-4.gif",
     ],
     prototypeLink:
       "https://www.figma.com/file/IhHOCwUjjpPVlPVHoE1NhX/Portfolio?type=design&node-id=185%3A1752&mode=design&t=BXI4PPUChWmX7jUZ-1",
