@@ -83,12 +83,12 @@ export function Nav() {
 
   return (
     <motion.nav
-      className="relative inline-flex items-center"
+      className="hidden md:relative md:inline-flex md:items-center"
       variants={listVariants}
       initial="hidden"
       animate="visible"
     >
-      <ul className="flex items-center gap-8 text-xl md:gap-16">
+      <ul className="flex items-center gap-16 text-xl">
         {navList.map(({ link, label }) => {
           return (
             <motion.li
