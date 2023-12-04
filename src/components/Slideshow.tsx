@@ -30,16 +30,16 @@ export function Slideshow({slides}: {slides: string[]}) {
   return (
     <div className="flex flex-col items-center gap-3">
       <div className="relative inline-block">
-        <div className="flex min-w-full h-48 rounded-2xl overflow-hidden md:w-[530px] md:h-[465px] ">
+        <div className="flex min-w-full h-48 rounded-2xl overflow-hidden md:w-[470px] md:h-[415px] ">
           {slides.map((slide) => {
             return (
               <Image
                 key={slide}
                 src={slide}
                 alt={slide}
-                width={530}
-                height={465}
-                className="min-w-full transition ease duration-700 object-cover md:min-w-[530px]"
+                width={470}
+                height={415}
+                className="min-w-full transition ease duration-700 object-cover md:min-w-[470px]"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
               />
             );
@@ -47,24 +47,24 @@ export function Slideshow({slides}: {slides: string[]}) {
         </div>
         <button
           onClick={prev}
-          className="absolute left-0 top-1/2 -translate-y-1/2 flex items-center justify-center w-6 h-16 p-1 bg-[#000000]/50 md:w-12 md:h-32"
+          className="absolute left-0 top-1/2 -translate-y-1/2 flex items-center justify-center w-6 h-16 p-1 bg-[#000000]/50 md:w-10 md:h-28"
         >
           <Image
             src="/icons/arrow-back.svg"
             alt="Arrow back"
-            width={26}
-            height={48}
+            width={20}
+            height={36}
           />
         </button>
         <button
           onClick={next}
-          className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center justify-center w-6 h-16 p-1 bg-[#000000]/50 md:w-12 md:h-32"
+          className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center justify-center w-6 h-16 p-1 bg-[#000000]/50 md:w-10 md:h-28"
         >
           <Image
             src="/icons/arrow-forward.svg"
             alt="Arrow forward"
-            width={26}
-            height={48}
+            width={20}
+            height={36}
           />
         </button>
       </div>
