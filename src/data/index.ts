@@ -42,7 +42,7 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "aso-bee: Kids’ E-Commerce Applicaiton",
+    title: "aso-bee: Kids’ E-Commerce Application",
     description: `aso-bee comes from the word "asobi/遊び" meaning 'play' combined with our fuzzy fellow bee!`,
     cover: "/images/aso-bee-cover.png",
     boxShadow:

@@ -83,7 +83,7 @@ export function Nav() {
 
   return (
     <motion.nav
-      className="hidden md:relative md:inline-flex md:items-center"
+      className="relative inline-flex items-center"
       variants={listVariants}
       initial="hidden"
       animate="visible"

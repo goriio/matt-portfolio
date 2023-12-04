@@ -9,10 +9,10 @@ export function Home() {
     <section id="home" className="min-h-screen grid place-items-center">
       <Container>
         <div className="flex flex-col-reverse gap-8 items-center justify-between md:flex-row">
-          <div className="max-w-[600px]">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left max-w-[600px]">
             <div className="mb-8 space-y-[12px]">
               <motion.h1
-                className="font-semibold text-2xl text-gray-9 leading-[1.25] md:text-5xl"
+                className="font-semibold text-3xl text-gray-9 leading-[1.25] md:text-5xl"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
               >

@@ -39,7 +39,7 @@ export function About() {
       <Container>
         <div className="flex flex-col-reverse justify-between gap-12 md:flex-row">
           <div>
-            <article className="max-w-[675px] text-gray-5 text-base text-start font-normal md:text-justify">
+            <article className="max-w-[675px] text-gray-9 text-base text-start font-normal md:text-justify">
               <motion.h2
                 className="mb-4 font-semibold text-3xl text-gray-9 md:text-4xl"
                 initial={{ y: 20, opacity: 0 }}

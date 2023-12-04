@@ -3,7 +3,7 @@ import { Nav } from "./Nav";
 
 export function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 py-4 bg-gray-1/80 z-10">
+    <header className="hidden md:block md:fixed md:top-0 md:left-0 md:right-0 md:py-4 md:bg-gray-1/80 md:z-10">
       <Container>
         <Nav />
       </Container>

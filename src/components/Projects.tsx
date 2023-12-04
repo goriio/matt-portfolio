@@ -112,7 +112,7 @@ export function Project({ project }: { project: Project }) {
           fill
           className="object-cover transition ease-in-out duration-700 group-hover:scale-125"
         />
-        <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-5 py-6 text-sm text-gray-1 opacity-0 bg-[#212529E5] transition ease-in-out duration-700 group-hover:opacity-100">
+        <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-5 py-6 text-sm text-gray-1 text-left opacity-0 bg-[#212529E5] transition ease-in-out duration-700 group-hover:opacity-100">
           {project.title}
           <Image src="/icons/info.svg" alt="Info icon" width={24} height={24} />
         </div>
