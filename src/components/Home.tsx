@@ -45,9 +45,13 @@ export function Home() {
               >
                 Get in touch
               </a>
-              <button className="px-5 py-2 rounded-2xl ring-[2px] ring-primary ring-inset text-primary text-lg">
+              <a
+                href="/pdfs/Ostulano-Matt-Harvey-R.-Resume.pdf"
+                target="_blank"
+                className="inline-block px-5 py-2 rounded-2xl ring-[2px] ring-primary ring-inset text-primary text-lg"
+              >
                 Resume
-              </button>
+              </a>
             </motion.div>
           </div>
           <motion.div
